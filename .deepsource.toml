@@ -3,3 +3,5 @@ version = 1
 [[analyzers]]
 name = "terraform"
 enabled = true
+    [analyzers.meta]
+    root = "terraform" 
