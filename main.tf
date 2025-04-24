@@ -7,7 +7,7 @@ data "azurerm_client_config" "current" {}
 module "labels" {
   source      = "clouddrove/labels/azure"
   version     = "1.0.0"
-  name        = var.name
+  name        = "${var.name}"
   environment = var.environment
   managedby   = var.managedby
   label_order = var.label_order
