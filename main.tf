@@ -21,7 +21,7 @@ module "labels" {
 ##-----------------------------------------------------------------------------
 resource "azurerm_storage_account" "storage" {
   provider                          = azurerm.main_sub
-  count                             = var.enabled ? 1 : 0
+  count                             = 2
   name                              = var.storage_account_name
   resource_group_name               = var.resource_group_name
   location                          = var.location
